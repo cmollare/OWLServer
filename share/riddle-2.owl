@@ -1,0 +1,942 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#"
+     xml:base="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#agent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_une_partie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_du_robot"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_utilisateur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_dans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_dans">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#contient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_dans"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_derrière -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_derrière">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#contient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_derrière"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_devant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_devant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#contient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_devant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_sous -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_sous">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#contient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_sous"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_sur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_sur">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#contient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_sur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_à_côté -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_à_côté">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#contient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_à_côté"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#contient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#contient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement_physique"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_dans"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pièce"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#rangement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_dans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_dans">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement_physique"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_positionné_vers"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pièce"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#rangement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_derrière -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_derrière">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_positionné_vers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_devant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_devant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_positionné_vers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_positionné_vers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_positionné_vers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_sous -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_sous">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_positionné_vers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_sur -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_sur">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_positionné_vers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_une_partie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_une_partie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_du_robot"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_utilisateur"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pièce"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#appartement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement_physique"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_à_côté -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_à_côté">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_positionné_vers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#couleur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#couleur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_humain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_humain">
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#position -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#position">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#agent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#proba_présence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#proba_présence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet_déplaçable"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#utilisateur"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#relative -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#relative">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#position"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#sexe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#sexe">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#x -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#x">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#position"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#y">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#position"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#z -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#z">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#position"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#activité -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#activité">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement_contextuel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#appartement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#appartement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement_physique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#armoire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#armoire">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_dans"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet_fixe"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#rangement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#bol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#bol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#récipient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#bras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#bras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_du_robot"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_utilisateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#bruit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#bruit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement_contextuel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#bruits_de_pas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#bruits_de_pas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#bruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#canapé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#canapé">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#meuble"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet_fixe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#canne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#canne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#chaise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#chaise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#gros_objet"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#meuble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#chambre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#chambre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pièce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#champs_de_vue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#champs_de_vue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_du_robot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#clefs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#clefs">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#trousseau_de_clefs"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#commode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#commode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#surface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#cuisine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#cuisine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pièce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#dormir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#dormir">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#activité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement_contextuel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement_contextuel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement_physique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement_physique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#faire_la_sieste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#faire_la_sieste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#dormir"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#faire_le_ménage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#faire_le_ménage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#activité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#fauteuil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#fauteuil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#gros_objet"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#meuble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#femme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#femme">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#sexe"/>
+                <owl:hasValue>femelle</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#utilisateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#gros_objet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#gros_objet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet_déplaçable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#homme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#homme">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#sexe"/>
+                <owl:hasValue>mâle</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#utilisateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#lire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#lire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#activité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#lunettes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#lunettes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#main -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#main">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_du_robot"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_utilisateur"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#marcher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#marcher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#activité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#meuble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#meuble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#montre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#montre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#mug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#mug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#récipient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#musique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#musique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#bruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#médicaments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#médicaments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet_déplaçable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet_déplaçable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet_fixe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet_fixe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_du_robot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_du_robot"/>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_utilisateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_utilisateur"/>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#passer_un_coup_de_fils -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#passer_un_coup_de_fils">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#passer_un_coup_de_téléphone"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#activité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#passer_un_coup_de_téléphone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#passer_un_coup_de_téléphone">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#téléphoner"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#activité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet_déplaçable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pince -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pince">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#partie_du_robot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pièce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pièce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement_physique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#placard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#placard">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_dans"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet_fixe"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#rangement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#rangement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#rangement">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#contient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#meuble"/>
+        <rdfs:comment>Meuble ou surface permettant de ranger un petit objet</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#regarder_la_télé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#regarder_la_télé">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#regarder_la_télévision"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#activité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#regarder_la_télévision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#regarder_la_télévision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#activité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#robot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#robot">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_humain"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#récipient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#récipient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#salle_de_bain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#salle_de_bain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pièce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#salle_à_manger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#salle_à_manger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pièce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#salon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#salon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pièce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#siège -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#siège">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#gros_objet"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#meuble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#surface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#surface">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#a_sur"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#rangement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#table -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#table">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet_fixe"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#surface"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#table_basse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#table_basse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#table"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#table_de_salon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#table_de_salon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#table"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#tasse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#tasse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#récipient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#toilettes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#toilettes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#pièce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#trousseau_de_clefs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#trousseau_de_clefs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#télécommande -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#télécommande">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#téléphone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#téléphone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#petit_objet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#téléphoner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#téléphoner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#activité"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#utilisateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#utilisateur">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#est_humain"/>
+                <owl:hasValue rdf:datatype="&xsd;boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#verre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#verre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#récipient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#voix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#voix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#bruit"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#Ali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#Ali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#utilisateur"/>
+        <sexe rdf:datatype="&xsd;string">mâle</sexe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#Christophe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#Christophe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#utilisateur"/>
+        <sexe rdf:datatype="&xsd;string">mâle</sexe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#Max -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#Max">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#robot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#agent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#environnement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl#objet"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

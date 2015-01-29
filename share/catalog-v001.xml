@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://cohse.semanticweb.org/ontologies/people" uri="people+pets.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://ias.cs.tum.edu/kb/ccrl2_semantic_map.owl" uri="ccrl2_semantic_map.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://ias.cs.tum.edu/kb/ccrl2_semantic_map_addons.owl" uri="ccrl2_semantic_map_addons.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://ias.cs.tum.edu/kb/ias_semantic_map.owl" uri="ias_semantic_map.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://ias.cs.tum.edu/kb/knowrob.owl" uri="knowrob.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://ias.cs.tum.edu/kb/knowrob_objects.owl" uri="knowrob_objects.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://kb.openrobots.org" uri="commonsense.oro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://www.co-ode.org/ontologies/galen" uri="simple-galen.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://www.example.org/ontology3e84710c:1139cb9e449:-8000" uri="wine.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl" uri="univ-bench.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://www.roboearth.org/kb/roboearth.owl" uri="roboearth.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1421930983756" name="http://www.semanticweb.org/christophe/ontologies/2015/0/Riddle-2.owl" uri="riddle-2.owl"/>
+    </group>
+</catalog>
